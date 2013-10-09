@@ -98,6 +98,14 @@ $buttonMargin: 10px;
 
 // Form fields
 
+.component {
+  background-color: white;
+  margin: 20px;
+  padding: 5px 0 20px 0;
+}
+
+$gutter: 40px;
+
 .field {
   @include display(flex);
   @include align-items(center);
@@ -105,7 +113,7 @@ $buttonMargin: 10px;
   label {
     @include flex(1);
     text-align: right;
-    margin-right: 20px;
+    margin-right: $gutter;
   }
 
   .control {
@@ -114,7 +122,7 @@ $buttonMargin: 10px;
 
   .detail {
     @include flex(2);
-    color: #555;
+    color: #777;
     font-style: italic;
   }
 }

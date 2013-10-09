@@ -2,5 +2,6 @@
 
 angular.module('components').
 controller('TriStateButton', function() {
-  this.state = null;
+  this.state1 = null;
+  this.state2 = null;
 });

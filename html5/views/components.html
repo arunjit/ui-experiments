@@ -1,12 +1,15 @@
-<h2>Components</h2>
-
-<article ng-controller="TriStateButton as tsb">
+<article ng-controller="TriStateButton as tsb" class="component">
   <header>
     <h3>Tri-state button</h3>
   </header>
   <section class="field">
     <label>Can I haz that?</label>
-    <div class="control" aj-tri-state-button ng-model="tsb.state"></div>
-    <div class="detail">{{tsb.state|canIHaz}}</div>
+    <div class="control" aj-tri-state-button ng-model="tsb.state1"></div>
+    <div class="detail">{{tsb.state1|canIHaz}}</div>
+  </section>
+  <section class="field">
+    <label>Howz 'bout that?</label>
+    <div class="control" aj-tri-state-button ng-model="tsb.state2"></div>
+    <div class="detail">{{tsb.state2|canIHaz}}</div>
   </section>
 </article>

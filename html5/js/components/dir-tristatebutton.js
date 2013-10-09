@@ -9,18 +9,11 @@ directive('ajTriStateButton', function() {
       '</div>';
 
   var link = function(scope, element, attr, ngModel) {
-    if (ngModel && ngModel.$viewValue != null) {
-      scope.yes = ngModel.$viewValue == true;
-      scope.no = ngModel.$viewValue == false;
-    } else {
-      scope.yes = scope.no = false;
-    }
+    scope.yes = scope.ngModel === true;
+    scope.no = scope.ngModel === false;
 
     var updateModel = function() {
-      if (ngModel) {
-        var value = scope.yes ? true : (scope.no ? false : null);
-        ngModel.$setViewValue(value);
-      }
+      scope.ngModel = scope.yes ? true : (scope.no ? false : null);
     };
 
     scope.toggleYes = function() {
@@ -37,7 +30,7 @@ directive('ajTriStateButton', function() {
   };
 
   return {
-    require: '?ngModel',
+    scope: {ngModel: '='},
     restrict: 'AE',
     template: template,
     replace: true,
