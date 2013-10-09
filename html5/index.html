@@ -2,9 +2,23 @@
 <html>
 <head>
   <title>HTML5 components and styles</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.2/angular.min.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="css/components.css">
+  <script src="ng/angular.js"></script>
+  <script src="ng/angular-route.js"></script>
 </head>
-<body>
-
+<body ng-app="index">
+  <header>
+    <h1><a href="#/">UI Experiments</a></h1>
+    <nav aj-nav>
+      <a aj-nav-item href="#/components">Components</a>
+    </nav>
+  </header>
+  <div ng-view></div>
+  <script src="js/components/components.js"></script>
+  <script src="js/components/ctrl-tristatebutton.js"></script>
+  <script src="js/components/dir-tristatebutton.js"></script>
+  <script src="js/index.js"></script>
 </body>
 </html>

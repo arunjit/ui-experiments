@@ -1,0 +1,20 @@
+.btn { background-color: white; border: 1px solid #e5e5e5; color: #333; height: 27px; line-height: 27px; }
+.btn:focus { outline: none; }
+
+.btn { display: inline-block; }
+
+.btn { -webkit-appearance: none; -moz-appearance: none; -ms-appearance: none; -o-appearance: none; appearance: none; background-color: rgba(240, 240, 240, 0.75); border-radius: 2px; font-size: 13px; font-weight: 700; margin: 0; margin-right: 10px; padding: 0; text-align: center; text-transform: uppercase; }
+.btn.left, .btn.middle { margin-right: 0; border-bottom-right-radius: 0; border-top-right-radius: 0; }
+.btn.right, .btn.middle { border-left-width: 0; border-top-left-radius: 0; border-bottom-left-radius: 0; }
+
+.btn-tristate .btn { width: 48px; }
+.btn-tristate .btn.yes { background-image: url("../images/check.svg"); background-position: center center; background-repeat: no-repeat; background-size: 16px 16px; }
+.btn-tristate .btn.no { background-image: url("../images/x.svg"); background-position: center center; background-repeat: no-repeat; background-size: 14px 14px; }
+.btn-tristate .btn.selected { color: white; }
+.btn-tristate .btn.selected.yes { background-color: #3d9400; background-image: url("../images/check_white.svg"); border-color: #3d9400; }
+.btn-tristate .btn.selected.no { background-color: #dd4b39; background-image: url("../images/x_white.svg"); border-color: #dd4b39; }
+
+.field { display: -webkit-box; display: -moz-box; display: box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -moz-box-align: center; box-align: center; -webkit-align-items: center; -moz-align-items: center; -ms-align-items: center; -o-align-items: center; align-items: center; -ms-flex-align: auto; }
+.field label { -webkit-box-flex: 1.0; -moz-box-flex: 1.0; box-flex: 1.0; -webkit-flex: 1; -moz-flex: 1; flex: 1; -ms-flex: 1 0 auto; text-align: right; margin-right: 20px; }
+.field .control { -webkit-box-flex: 1.0; -moz-box-flex: 1.0; box-flex: 1.0; -webkit-flex: 1; -moz-flex: 1; flex: 1; -ms-flex: 1 0 auto; }
+.field .detail { -webkit-box-flex: 2.0; -moz-box-flex: 2.0; box-flex: 2.0; -webkit-flex: 2; -moz-flex: 2; flex: 2; -ms-flex: 2 0 auto; color: #555; font-style: italic; }
